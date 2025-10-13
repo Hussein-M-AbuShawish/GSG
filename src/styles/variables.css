@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #DB4444;
+    --secondary-color: #f5f5f5;
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --text-gray: #555555;
+
+    --font-main: 'Poppins', sans-serif;
+
+    --container-width: 1200px;
+    
+    /* Responsive breakpoints */
+    --mobile: 480px;
+    --tablet: 768px;
+    --desktop: 1024px;
+    --large-desktop: 1200px;
+}

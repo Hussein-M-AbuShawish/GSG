@@ -1,0 +1,83 @@
+/* حاوية المنتج */
+.product {
+    width: 260px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* صورة المنتج */
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* شارة NEW */
+.new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #00c776;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* السعر */
+.product-price {
+    color: #db4444;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-price del {
+    color: #888;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* الدوائر */
+.color-dots {
+    margin-top: 8px;
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+/* التقييم */
+.evaluation {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.stars {
+    color: #f6b400;
+    margin-right: 5px;
+}
+
+.reviews {
+    color: #777;
+    font-size: 13px;
+}

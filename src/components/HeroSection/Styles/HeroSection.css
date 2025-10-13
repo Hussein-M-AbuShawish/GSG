@@ -1,0 +1,150 @@
+.hero-section {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+}
+
+.hero-section .list-container {
+    padding: 30px 0 0px 100px;
+    width: 30%;
+}
+
+
+.hero-section .list-container .item-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.hero-section .list-container .item-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    background-color: var(--light-color);
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+}
+
+.hero-section .list-container .item-list li .arrow-category {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+
+}
+
+.hero-section .product-container {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0px 20px;
+}
+
+
+
+.hero-section .product-container .product-carousel {
+    width: 80%;
+    margin-left: 15px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+
+.hero-section .product-container .product-carousel .left-side {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.hero-section .product-container .product-carousel .left-side .title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.hero-section .product-container .product-carousel .left-side .title img {
+    width: 40px;
+    height: 49px;
+}
+
+.hero-section .product-container .product-carousel .left-side .title span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hero-section .product-container .product-carousel .left-side p {
+    width: 90%;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+
+.hero-section .product-container .product-carousel .left-side button {
+    background-color: transparent;
+    color: var(--light-color);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--light-color);
+}
+
+/* ===== السلايدر ===== */
+.dots-group {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+}
+
+
+
+/* 
+.hero-section .product-container {
+    width: 80%;
+}
+
+
+.hero-section .product-container .product-carousel .left-side {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.hero-section .product-container .product-carousel .left-side .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */

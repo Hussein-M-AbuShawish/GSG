@@ -1,0 +1,30 @@
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+}
+
+.time-box {
+    margin: 0 10px;
+}
+
+.label {
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.dots {
+    color: #f15b5b;
+    font-size: 31px;
+    position: relative;
+    top: 10px;
+}

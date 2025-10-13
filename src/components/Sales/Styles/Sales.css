@@ -1,0 +1,84 @@
+.sales-section {
+    text-align: center;
+    margin: 5% 0;
+    padding: 10px 0px 10px 100px;
+}
+
+
+
+.main-section {
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products-wrapper {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 20px 0;
+    width: 90%;
+}
+
+
+
+.products-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* الأسهم */
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: #db4444;
+    color: #fff;
+}
+
+.arrow.left {
+    left: 0;
+}
+
+.arrow.right {
+    right: 0;
+}
+
+.products-flex {
+    margin-top: 3%;
+    margin-bottom: 50px;
+    display: flex;
+
+    gap: 3%;
+}
+
+.products-wrap {
+    flex-wrap: wrap;
+}

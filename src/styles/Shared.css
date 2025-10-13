@@ -1,0 +1,118 @@
+.top-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-indicator {
+    width: 20px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bottom-section .center-group {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.bottom-section .center-group h2 {
+    text-align: left;
+
+}
+
+.bottom-section .right-side-arrows {
+    width: 100%;
+    text-align: end;
+    padding-right: 15%;
+}
+
+.bottom-section .right-side-arrows button {
+    width: 159px;
+    height: 56px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    color: var(--light-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Responsive Button Styles */
+@media (max-width: 768px) {
+    .bottom-section .right-side-arrows button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .bottom-section .right-side-arrows .arrows-section span {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .bottom-section .center-group h2 {
+        text-align: left;
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .bottom-section .right-side-arrows button {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .bottom-section .right-side-arrows .arrows-section span {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+.bottom-section .right-side-arrows .arrows-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.bottom-section .right-side-arrows .arrows-section span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

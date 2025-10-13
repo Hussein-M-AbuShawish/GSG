@@ -1,0 +1,64 @@
+/* Responsive Music Category Section */
+@media (max-width: 1024px) {
+    .music-category-section {
+        margin: 0% 8% 0% 50px;
+        padding: 60px 50px;
+    }
+
+    .music-category-section .details-section .description {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .image-section img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .music-category-section {
+        flex-direction: column;
+        margin: 0% 5% 0% 5%;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .music-category-section .details-section .description {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .music-category-section .details-section button {
+        width: 140px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .image-section img {
+        width: 300px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-category-section {
+        margin: 0% 2% 0% 2%;
+        padding: 30px 20px;
+    }
+
+    .music-category-section .details-section .description {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .music-category-section .details-section button {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .image-section img {
+        width: 250px;
+        margin-top: 15px;
+    }
+}
