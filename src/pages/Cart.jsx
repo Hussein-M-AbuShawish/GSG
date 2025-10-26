@@ -1,9 +1,9 @@
 import React from "react";
-
+import CartComponents from "../components/CartComponents/CartComponents";
 export default function Cart() {
   return (
     <>
-      <h1>Cart</h1>
+      <CartComponents />
     </>
   );
 }

@@ -1,0 +1,377 @@
+.cart-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb .active {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Empty Cart */
+.empty-cart {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-cart-content {
+    text-align: center;
+}
+
+.empty-cart-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.empty-cart h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.empty-cart p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.continue-shopping {
+    display: inline-block;
+    background-color: #DB4444;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.continue-shopping:hover {
+    background-color: #c23939;
+}
+
+/* جدول المنتجات */
+.cart-table {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.cart-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-item {
+    text-align: center;
+}
+
+.header-item:first-child {
+    text-align: left;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.cart-item:hover {
+    background-color: #fafafa;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* معلومات المنتج */
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.remove-btn {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn:hover {
+    background-color: #c23939;
+}
+
+.product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-name {
+    font-size: 14px;
+    max-width: 250px;
+}
+
+.product-price {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* التحكم بالكمية */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.quantity-controls button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.quantity-controls button:hover {
+    background-color: #f5f5f5;
+}
+
+.quantity-controls span {
+    min-width: 40px;
+    text-align: center;
+    font-weight: 600;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    padding: 5px 10px;
+}
+
+.product-subtotal {
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+/* أزرار الإجراءات */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.return-btn,
+.update-cart-btn {
+    padding: 12px 30px;
+    border: 1px solid #00000080;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.return-btn:hover,
+.update-cart-btn:hover {
+    background-color: #DB4444;
+    color: white;
+    border-color: #DB4444;
+}
+
+/* القسم السفلي */
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* كوبون الخصم */
+.coupon-section {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    height: 50px;
+}
+
+.coupon-section input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.apply-coupon {
+    padding: 12px 40px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.apply-coupon:hover {
+    background-color: #c23939;
+}
+
+/* ملخص السلة */
+.cart-total {
+    width: 400px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.cart-total h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #666;
+    border-bottom: 1px solid #000;
+}
+
+.total-row.final {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    border: none;
+}
+
+.cart-total hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #c23939;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cart-bottom {
+        flex-direction: column;
+    }
+
+    .cart-total {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cart-header,
+    .cart-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cart-header {
+        display: none;
+    }
+
+    .cart-item {
+        padding: 20px 15px;
+    }
+
+    .product-info {
+        justify-content: flex-start;
+    }
+
+    .product-price,
+    .quantity-controls,
+    .product-subtotal {
+        justify-content: flex-start;
+    }
+
+    .quantity-controls {
+        margin: 0;
+    }
+
+    .cart-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .return-btn,
+    .update-cart-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .coupon-section {
+        flex-direction: column;
+    }
+
+    .apply-coupon {
+        width: 100%;
+    }
+}

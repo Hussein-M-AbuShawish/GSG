@@ -1,9 +1,9 @@
 import React from "react";
-
+import CheckoutComponent from "../components/CheckoutComponents/CheckoutComponent";
 export default function Checkout() {
   return (
     <>
-      <h1>Logins</h1>
+      <CheckoutComponent />
     </>
   );
 }

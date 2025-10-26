@@ -143,6 +143,220 @@ header {
     width: 32px;
     height: 32px;
     cursor: pointer;
+    margin-left: 10px;
+}
+
+/* أضف هذه الأنماط إلى ملف Header.css الموجود */
+
+/* Cart Badge */
+.cart-badge {
+    position: absolute;
+    top: -24px;
+    right: -10px;
+    background-color: #DB4444;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.cart-badge-mobile {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #DB4444;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* User Menu */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.logout-btn {
+    padding: 6px 15px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c23939;
+}
+
+.login-link {
+    padding: 6px 15px;
+    color: white;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+
+/* Mobile User Elements */
+.user-greeting {
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.logout-btn-mobile {
+    padding: 12px 0;
+    background: transparent;
+    color: #DB4444;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* ===== User Dropdown ===== */
+.user-dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: var(--dark-color);
+    font-weight: 500;
+    user-select: none;
+}
+
+.user-trigger:hover .user-name {
+    color: #DB4444;
+}
+
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.arrow {
+    font-size: 12px;
+    color: #555;
+}
+
+.user-dropdown-menu {
+    position: absolute;
+    top: 115%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 160px;
+    z-index: 100;
+    animation: fadeIn 0.2s ease;
+    -webkit-animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+.dropdown-username {
+    padding: 8px 15px;
+    font-weight: 600;
+    color: var(--dark-color);
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.dropdown-link:hover {
+    background: #f5f5f5;
+    color: #DB4444;
+}
+
+.dropdown-logout {
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding: 10px 15px;
+    color: #DB4444;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-logout:hover {
+    background: #fbeaea;
+}
+
+
+/* تحسين أيقونات الـ mobile */
+.mobile-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.mobile-icons a {
+    position: relative;
+}
+
+@media (min-width: 769px) {
+
+    .user-greeting,
+    .logout-btn-mobile {
+        display: none;
+    }
 }
 
 /* .bottom-header .container {

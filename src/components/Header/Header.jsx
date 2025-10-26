@@ -4,6 +4,7 @@ import { BottomHeader } from "./BottomHeader";
 import Search from "../../assets/icons/Search.png";
 import Heart from "../../assets/icons/Heart.png";
 import Cart from "../../assets/icons/Cart.png";
+import User from "../../assets/icons/user.png";
 import "./Styles/Header.css";
 import "./Styles/HeaderResponsive.css";
 
@@ -19,6 +20,7 @@ export default function Header() {
     { name: "search", src: Search },
     { name: "heart", src: Heart },
     { name: "cart", src: Cart },
+    { name: "User", src: User },
   ];
 
   return (

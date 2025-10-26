@@ -1,18 +1,28 @@
-// RightSideLogin.jsx
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../Button";
+import { useUser } from "../../context/UserContext"; // ✅ استيراد الـ context
 import "./Styles/login.css";
 
 export default function RightSideLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { login } = useUser(); // ✅ استدعاء دالة تسجيل الدخول من الـ context
 
   function handleSubmit(e) {
     e.preventDefault();
-    // ملاحظة أمان: لا تحفظ كلمة السر في localStorage في تطبيق حقيقي
-    localStorage.setItem("user", JSON.stringify({ email }));
+
+    // بيانات المستخدم — يمكنك تعديلها لاحقًا بعد إضافة API حقيقية
+    const userData = {
+      name: email.split("@")[0], // اسم مؤقت مستخرج من الإيميل
+      email,
+    };
+
+    // ✅ تسجيل المستخدم في السياق + تخزينه في localStorage
+    login(userData);
+
+    // ✅ الانتقال للصفحة الرئيسية أو Checkout
     navigate("/");
   }
 
@@ -47,7 +57,7 @@ export default function RightSideLogin() {
         <div className="buttons">
           <Button buttonTitle="Login" />
           <a href="#" onClick={(e) => e.preventDefault()}>
-            Forget Password?{" "}
+            Forget Password?
           </a>
         </div>
       </form>

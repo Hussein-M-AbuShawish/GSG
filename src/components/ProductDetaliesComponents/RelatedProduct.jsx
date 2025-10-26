@@ -1,7 +1,6 @@
 // RelatedProduct.jsx
 import React from "react";
 import ProductCard from "../Sales/ProductCard";
-import BottomSection from "../Sales/BottomSection";
 import TopSection from "../Sales/TopSection";
 import Laptop from "../../assets/images/Products/Laptop.png";
 import Keyboard from "../../assets/images/Products/Keyboard.png";
